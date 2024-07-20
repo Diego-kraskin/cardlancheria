@@ -1,0 +1,69 @@
+
+
+/* estilos.css */
+body {
+  font-family: 'Outfit', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.cabecalho {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.lista-personagens {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.cartao {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.cartao:hover {
+  transform: translateY(-10px);
+}
+
+.imagem-personagem {
+  width: 100%;
+  height: auto;
+}
+
+.descricao {
+  padding: 20px;
+}
+
+.fundo-1 { background-color: #ffcccc; }
+.fundo-2 { background-color: #ccffcc; }
+.fundo-3 { background-color: #ccccff; }
+.fundo-4 { background-color: #ffffcc; }
+.fundo-5 { background-color: #ccffff; }
+.fundo-6 { background-color: #ffccff; }
+
+/* responsivo.css */
+@media (max-width: 768px) {
+  .lista-personagens {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+  }
+}
+
